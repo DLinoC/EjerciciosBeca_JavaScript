@@ -95,35 +95,35 @@ pokemons.forEach(pokemon => {
 
 //10. Utilizando javascript crear una tabla de pokemons con las siguientes columnas: id, name, type, base_damage, base_hp, speed
  
-const root = document.getElementById("root")
-const table = document.createElement("table")
-root.append(table)
+// const root = document.getElementById("root")
+// const table = document.createElement("table")
+// root.append(table)
 
-const tr=document.createElement("tr")
-table.append(tr)
+// const tr=document.createElement("tr")
+// table.append(tr)
 
-//Headers
+// //Headers
 
-let headers = Object.keys(pokemons[0])
+// let headers = Object.keys(pokemons[0])
 
-for(index in headers){
-    const th=document.createElement("th")
-    th.textContent = headers[index]
-    tr.append(th)
-}
+// for(index in headers){
+//     const th=document.createElement("th")
+//     th.textContent = headers[index]
+//     tr.append(th)
+// }
 
-//Table body
-for(let i=0;i<pokemons.length;i++){
-    const trb = document.createElement("tr")
-    const values =Object.values(pokemons[i])
+// //Table body
+// for(let i=0;i<pokemons.length;i++){
+//     const trb = document.createElement("tr")
+//     const values =Object.values(pokemons[i])
 
-    for(let j=0; j<values.length; j++){
-        const tdb= document.createElement("td")
-        tdb.textContent= values[j]
-        trb.append(tdb)
-    }
-    table.append(trb)
-}
+//     for(let j=0; j<values.length; j++){
+//         const tdb= document.createElement("td")
+//         tdb.textContent= values[j]
+//         trb.append(tdb)
+//     }
+//     table.append(trb)
+// }
 
 //11. Utilizando javascript modifica el codigo creado en el ejecicio anterior y agrega un evento que permita ordenar los pokemons haciendo click en sus encabezados.
 const root = document.getElementById("root")
