@@ -115,3 +115,7 @@ let users = [
     root.append(boton)
     
 //9. Agrega un listener al boton para que cuando el usuario haga hover sobre este, el boton desaparezca.
+boton.addEventListener("mouseover",desaparecer);
+function desaparecer(){
+boton.style.display="none";
+}
