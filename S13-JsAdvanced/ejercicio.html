@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <title>Sesion 13</title>
+  </head>
+  <body>
+    <div ng-app="myApp" ng-controller="myCtrl">
+      <p>Ingrese los Km recorridos: <input type="text" ng-model="distance" /></p>
+      <p>{{distance}} km</p>
+      <p>Tarifa sin descuento: S/{{calcularTarifa()}}</p>
+      <p>Tarifa con descuento, por superar los S/500 en importe: S/{{descuento()}} </p>
+    </div>
+    <script src="ejercicio.js"></script>
+  </body>
+</html>
