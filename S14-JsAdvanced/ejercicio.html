@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session 14</title>
+
+    <style>
+        body {
+            padding: 0;
+        }
+        .container {
+            width: 800px;
+            margin: 10px auto;
+        }
+        label {
+            display: block;
+            margin: 4px 2px 4px 2px;
+        }
+        .code{
+            background-color:chartreuse;
+        }
+        input{
+            background-color: darksalmon;
+            margin: 6px 2px 6px 2px;
+        }
+    </style>
+    <!-- Angular cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body>
+    <main class="container" ng-app="myApp" ng-controller="controlador">
+        <label for="">Codigo</label>
+        <input class="code" type="text" ng-model="codigo">
+    
+        <label for="">Horas trabajadas:</label>
+        <input type="number" ng-model="horas">
+    
+        <label for="">Tarifa x Hora</label>
+        <input type="number" ng-model="tarifa">
+        <br><br>
+        <label for="">Sueldo Base</label>
+        <p> Su sueldo base es S/. {{basico()}}</p>
+    
+        <label for="">Descuento</label>
+        <p>Su descuento es S/. {{descuento}}</p>
+
+        <label for="">Sueldo Neto</label>
+        <p>Su sueldo neto es S/. {{sneto}}</p>
+    </main>
+    
+    <script src="ejercicio.js"></script>
+</body>
+</html>
