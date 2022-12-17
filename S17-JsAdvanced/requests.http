@@ -1,0 +1,28 @@
+###
+POST http://localhost:9000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "name":"Luka Modric",
+    "age":"40",
+    "email":"Luka_Modric@hotmail.com"
+}
+
+###
+Get http://localhost:9000/api/users HTTP/1.1
+
+###
+GET http://localhost:9000/api/users/639d048072a5b80b8f025f9c HTTP/1.1
+
+###
+PUT http://localhost:9000/api/users/639d048072a5b80b8f025f9c HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "Luisa Gomez",
+  "age" : "27",
+  "email": "luisa_gomez@gmail.com"
+}
+
+###
+DELETE http://localhost:9000/api/users/639d048072a5b80b8f025f9c HTTP/1.1
